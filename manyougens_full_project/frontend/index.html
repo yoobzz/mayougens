@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>manyougens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>manyougens</h1>
+        <p>Wrzuć swój plik genetyczny i wybierz, jak chcesz, aby był interpretowany</p>
+        <input type="file" id="fileUpload">
+        
+        <label for="mode">Wybierz interpretację:</label>
+        <select id="mode">
+            <option>mózg</option>
+            <option>ciało</option>
+            <option>emocje</option>
+            <option>dusza</option>
+            <option>freestyle</option>
+        </select>
+
+        <label for="style">Styl wypowiedzi:</label>
+        <select id="style">
+            <option>naukowy</option>
+            <option>metaforyczny</option>
+            <option>ziomalski</option>
+        </select>
+
+        <button onclick="interpret()">Zrozum mnie</button>
+
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
